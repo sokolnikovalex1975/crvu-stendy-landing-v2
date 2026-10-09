@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бриф-карта участия в выставке — ЦРВУ</title>
+<meta name="description" content="Бриф-карта для подготовки к выставке: цели участия, площадь, состав стенда, аудитория и KPI. Заполните, распечатайте или сохраните в PDF.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/logos/stendart-favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<style>
+  :root { --ink: #121212; --ink-2: #5c5a55; --paper: #f3f1ec; --line: #bdb8ac; --accent: #ff5500; --accent-ink: #b93a00; }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; hyphens: auto; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Manrope', system-ui, sans-serif; font-size: 15px; line-height: 1.5; }
+  h1, h2 { font-family: 'Geologica', 'Manrope', sans-serif; margin: 0; letter-spacing: -0.02em; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
+  .bar { position: sticky; top: 0; z-index: 2; display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; align-items: center; justify-content: space-between; padding: 0.75rem clamp(1rem, 4vw, 2rem); background: var(--ink); color: var(--paper); }
+  .bar a { color: var(--paper); }
+  .bar .btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.25rem; border: 0; background: var(--accent); color: var(--ink); font: 700 15px 'Manrope', sans-serif; cursor: pointer; }
+  .bar .btn:hover { background: #ff6a24; }
+  .bar .btn:focus-visible, .bar a:focus-visible { outline: 2px solid var(--paper); outline-offset: 3px; }
+  .sheet { width: min(210mm, 100%); margin: 1.5rem auto 3rem; padding: 14mm 14mm 12mm; background: #fff; border: 1px solid var(--line); }
+  .head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; padding-bottom: 6mm; border-bottom: 2px solid var(--ink); }
+  .head img { width: 150px; height: auto; }
+  .head p { margin: 0; text-align: right; }
+  h1 { margin-top: 6mm; font-size: 26px; line-height: 1.1; font-weight: 700; }
+  .lead { margin: 2mm 0 0; color: var(--ink-2); max-width: 62ch; }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5mm 8mm; margin-top: 6mm; }
+  .blk { break-inside: avoid; }
+  .blk--wide { grid-column: 1 / -1; }
+  h2 { display: flex; gap: 0.6rem; align-items: baseline; font-size: 14px; font-weight: 700; letter-spacing: 0; margin-bottom: 2mm; }
+  h2 .mono { color: var(--accent-ink); }
+  .line { display: block; min-height: 8mm; border-bottom: 1px solid var(--ink); margin-bottom: 1mm; }
+  .lab { display: block; margin-top: 3mm; }
+  .cb { display: flex; gap: 0.55rem; align-items: flex-start; margin: 1.2mm 0; }
+  .cb i { flex: none; width: 4mm; height: 4mm; margin-top: 1px; border: 1.2px solid var(--ink); }
+  .row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6mm; }
+  .foot { margin-top: 7mm; padding-top: 4mm; border-top: 1px solid var(--ink); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2mm 8mm; font-size: 13px; }
+  .foot p { margin: 0; }
+  .note { margin-top: 4mm; color: var(--ink-2); font-size: 12.5px; }
+  @media (max-width: 640px) { .grid, .row { grid-template-columns: 1fr; } .sheet { padding: 1.25rem; } }
+  @page { size: A4; margin: 10mm; }
+  @media print {
+    body { background: #fff; font-size: 11.5px; }
+    .bar { display: none; }
+    .sheet { width: auto; margin: 0; padding: 0; border: 0; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<header class="bar">
+  <a href="index.html">← Вернуться на сайт</a>
+  <button class="btn" type="button" onclick="window.print()">Распечатать или сохранить в PDF</button>
+</header>
+
+<main class="sheet">
+  <div class="head">
+    <img src="assets/logos/crvu-logo-header.png" width="1680" height="361" alt="ЦРВУ">
+    <p class="mono">Выставочные стенды под ключ<br>+7 (495) 106-70-22<br>manager@crvu.ru</p>
+  </div>
+
+  <h1>Бриф-карта участия в выставке</h1>
+  <p class="lead">Заполните карту до начала проектирования: цели, площадь и состав стенда определяют конструкцию, свет и смету. Не знаете ответа — оставьте строку пустой, уточним по телефону.</p>
+
+  <div class="grid">
+    <section class="blk blk--wide">
+      <h2><span class="mono">01</span> Цели участия</h2>
+      <div class="row">
+        <div>
+          <div class="cb"><i></i><span>Новые клиенты и заявки</span></div>
+          <div class="cb"><i></i><span>Встречи с текущими партнёрами</span></div>
+        </div>
+        <div>
+          <div class="cb"><i></i><span>Запуск или показ новой продукции</span></div>
+          <div class="cb"><i></i><span>Поиск дилеров и дистрибьюторов</span></div>
+        </div>
+        <div>
+          <div class="cb"><i></i><span>Узнаваемость бренда</span></div>
+          <div class="cb"><i></i><span>Другое: ______________</span></div>
+        </div>
+      </div>
+      <span class="line"></span>
+      <span class="mono">Главная цель в одном предложении</span>
+    </section>
+
+    <section class="blk">
+      <h2><span class="mono">02</span> Выставка</h2>
+      <span class="line"></span><span class="mono">Название</span>
+      <span class="line" style="margin-top:3mm"></span><span class="mono">Даты работы</span>
+      <span class="line" style="margin-top:3mm"></span><span class="mono">Площадка и павильон</span>
+    </section>
+
+    <section class="blk">
+      <h2><span class="mono">03</span> Площадь и тип</h2>
+      <span class="line"></span><span class="mono">Площадь, м² и номер стенда</span>
+      <div class="cb" style="margin-top:3mm"><i></i><span>Линейный (одна сторона)</span></div>
+      <div class="cb"><i></i><span>Угловой (две стороны)</span></div>
+      <div class="cb"><i></i><span>Полуостров (три стороны)</span></div>
+      <div class="cb"><i></i><span>Остров (четыре стороны)</span></div>
+    </section>
+
+    <section class="blk">
+      <h2><span class="mono">04</span> Что покажете</h2>
+      <div class="cb"><i></i><span>Крупное оборудование</span></div>
+      <div class="cb"><i></i><span>Образцы продукции</span></div>
+      <div class="cb"><i></i><span>Экраны и демонстрации</span></div>
+      <div class="cb"><i></i><span>Переговорная зона, ресепшн, лаунж</span></div>
+      <div class="cb"><i></i><span>Склад или подсобное помещение</span></div>
+      <span class="line" style="margin-top:3mm"></span><span class="mono">Вес и габариты тяжёлых экспонатов</span>
+    </section>
+
+    <section class="blk">
+      <h2><span class="mono">05</span> Аудитория</h2>
+      <span class="line"></span><span class="mono">Кого вы ждёте на стенде</span>
+      <span class="line" style="margin-top:3mm"></span><span class="mono">Должности и отрасли гостей</span>
+      <span class="line" style="margin-top:3mm"></span><span class="mono">Что гость должен запомнить о вас</span>
+    </section>
+
+    <section class="blk blk--wide">
+      <h2><span class="mono">06</span> Ориентиры результата (заполняете вы)</h2>
+      <div class="row">
+        <div><span class="line"></span><span class="mono">Встреч с клиентами, шт.</span></div>
+        <div><span class="line"></span><span class="mono">Новых контактов, шт.</span></div>
+        <div><span class="line"></span><span class="mono">Демонстраций продукта, шт.</span></div>
+      </div>
+      <p class="note">Числа вы задаёте сами по опыту прошлых выставок. Мы их не обещаем: результат зависит от продукта, экспозиции и команды на стенде.</p>
+    </section>
+
+    <section class="blk">
+      <h2><span class="mono">07</span> Бюджет и сроки</h2>
+      <span class="line"></span><span class="mono">Ориентир по бюджету на стенд, ₽</span>
+      <span class="line" style="margin-top:3mm"></span><span class="mono">Когда нужен 3D-проект</span>
+      <span class="line" style="margin-top:3mm"></span><span class="mono">Дата монтажа по плану организатора</span>
+    </section>
+
+    <section class="blk">
+      <h2><span class="mono">08</span> Бренд и материалы</h2>
+      <div class="cb"><i></i><span>Есть брендбук и логотип в векторе</span></div>
+      <div class="cb"><i></i><span>Есть план площадки от организатора</span></div>
+      <div class="cb"><i></i><span>Есть прошлый стенд или его фото</span></div>
+      <span class="line" style="margin-top:3mm"></span><span class="mono">Ссылка на материалы</span>
+    </section>
+
+    <section class="blk blk--wide">
+      <h2><span class="mono">09</span> Контакты ответственного</h2>
+      <div class="row">
+        <div><span class="line"></span><span class="mono">Имя и должность</span></div>
+        <div><span class="line"></span><span class="mono">Телефон</span></div>
+        <div><span class="line"></span><span class="mono">Email</span></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="foot">
+    <p><b>Куда отправить:</b> manager@crvu.ru или +7 (495) 106-70-22, ежедневно с 9:30 до 18:30.</p>
+    <p class="mono">Бриф-карта не является договором или сметой</p>
+  </div>
+</main>
+</body>
+</html>
